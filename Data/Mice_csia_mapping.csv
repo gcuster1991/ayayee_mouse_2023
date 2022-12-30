@@ -1,0 +1,12 @@
+﻿SampleID,BarcodeSequence,InputFileName,LinkerPrimerSequence,Samples,Groups,Description
+CV1,,,,CV1,conventional mice,conventional mice
+CV2,,,,CV2,conventional mice,conventional mice
+CV3,,,,CV3,conventional mice,conventional mice
+CV4,,,,CV4,conventional mice,conventional mice
+CV5,,,,CV5,conventional mice,conventional mice
+GF1,,,,GF1,Germ-free mice,Germ-free mice
+GF2,,,,GF2,Germ-free mice,Germ-free mice
+GF3,,,,GF3,Germ-free mice,Germ-free mice
+GF4,,,,GF4,Germ-free mice,Germ-free mice
+GF5,,,,GF5,Germ-free mice,Germ-free mice
+GF6,,,,GF6,Germ-free mice,Germ-free mice

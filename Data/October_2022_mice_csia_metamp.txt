@@ -1,0 +1,12 @@
+#Samplename	Treatment	Strand	Read1	Read2	runid
+CV1	Conventional	+	CV1_S33_L001_R1_001.fastq	CV1_S33_L001_R2_001.fastq	1
+CV2	Conventional	+	CV2_S34_L001_R1_001.fastq	CV2_S34_L001_R2_001.fastq	1
+CV3	Conventional	+	CV3_S35_L001_R1_001.fastq	CV3_S35_L001_R2_001.fastq	1
+CV4	Conventional	+	CV4_S36_L001_R1_001.fastq	CV4_S36_L001_R2_001.fastq	1
+CV5	Conventional	+	CV5_S37_L001_R1_001.fastq	CV5_S37_L001_R2_001.fastq	1
+GF1	Germfree 	+	GF1_S38_L001_R1_001.fastq	GF1_S38_L001_R2_001.fastq	1
+GF2	Germfree 	+	GF2_S39_L001_R1_001.fastq	GF2_S39_L001_R2_001.fastq	1
+GF3	Germfree 	+	GF3_S40_L001_R1_001.fastq	GF3_S40_L001_R2_001.fastq	1
+GF4	Germfree 	+	GF4_S41_L001_R1_001.fastq	GF4_S41_L001_R2_001.fastq	1
+GF5	Germfree 	+	GF5_S42_L001_R1_001.fastq	GF5_S42_L001_R2_001.fastq	1
+GF6	Germfree 	+	GF6_S43_L001_R1_001.fastq	GF6_S43_L001_R2_001.fastq	1
