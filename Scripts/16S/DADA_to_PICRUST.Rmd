@@ -1,0 +1,39 @@
+---
+title: "dada2 > PICRUST"
+output: html_notebook
+---
+
+
+After you assign taxonomy
+
+Change seq headers to asv number (ASV_1, ASV_2...)
+```{r}
+asv_seqs <- colnames(seqtab)
+asv_headers <- vector(dim(seqtab)[2], mode="character")
+
+for (i in 1:dim(seqtab)[2]) {
+  asv_headers[i] <- paste(">ASV", i, sep="_")
+}
+```
+
+Create and write out a fasta of our final ASV seqs
+```{r}
+asv_fasta <- c(rbind(asv_headers, asv_seqs))
+write(asv_fasta, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/ASVs.fa")
+
+#ASV count table:
+asv_tab <- t(seqtab)
+row.names(asv_tab) <- sub(">", "", asv_headers)
+write.table(asv_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_counts.tsv", sep="\t", quote=F, col.names=NA)
+
+#tax table
+asv_tax <- taxa
+row.names(asv_tax) <- sub(">", "", asv_headers)
+write.table(asv_tax, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_taxonomy.tsv", sep = "\t", quote=F, col.names=NA)
+
+#To merge asv abundance and taxonomy into one file
+OTU_TAX_table <- merge(asv_tab, asv_tax, by=0)
+write.table(OTU_TAX_table, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/OTU_TAX_table.tsv", sep = "\t", quote=F, col.names=NA)
+
+```
+
