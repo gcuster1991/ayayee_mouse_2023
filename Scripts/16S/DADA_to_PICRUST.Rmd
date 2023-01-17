@@ -117,17 +117,17 @@ write(asv_fasta, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Dat
 #ASV count table:
 asv_tab <- t(seqtab)
 row.names(asv_tab) <- sub(">", "", asv_headers)
-write.table(asv_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_counts_rarify.tsv", sep="\t", quote=F, col.names=NA)
+write.table(asv_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/ASVs_counts_rarify.tsv", sep="\t", quote=F, col.names=NA)
 
 #tax table
 taxa <- data.frame(tax_table(mouse16S_bac_rarefy))
 asv_tax <- taxa
 row.names(asv_tax) <- sub(">", "", asv_headers)
-write.table(asv_tax, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_taxonomy_rarify.tsv", sep = "\t", quote=F, col.names=NA)
+write.table(asv_tax, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/ASVs_taxonomy_rarify.tsv", sep = "\t", quote=F, col.names=NA)
 
 #To merge asv abundance and taxonomy into one file
 OTU_TAX_table <- merge(asv_tab, asv_tax, by=0)
-write.table(OTU_TAX_table, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/OTU_TAX_table_rarify.tsv", sep = "\t", quote=F, col.names=NA)
+write.table(OTU_TAX_table, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/OTU_TAX_table_rarify.tsv", sep = "\t", quote=F, col.names=NA)
 
 ```
 
