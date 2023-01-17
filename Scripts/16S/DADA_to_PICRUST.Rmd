@@ -4,10 +4,103 @@ output: html_notebook
 ---
 
 
+```{r}
+require(phyloseq)
+ require(parallelDist)
+require(ggplot2)
+  require(randomForest)
+require(Boruta)
+  require(phyloseq)
+require(stats)
+  require(dplyr)
+require(readr)
+  require(pheatmap)
+require(tidyverse)
+  require(micrUBIfuns)
+require(circlize)
+  require(phylosmith)
+require(phangorn)
+  require(gridExtra)
+require(pairwiseAdonis)
+  require(car)
+```
 After you assign taxonomy
+
+Use rarefied data as per Paul's request
+Load necessary files from Dada2 processing script.
+
+```{r}
+load("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/CleanedUpDADA2EnvMouse2023_Wtree.RData")
+```
+
+Read in metadata
+
+```{#r}
+metadata<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/BeeBread/Data/BB_sample-metadata.txt", sep = "\t")
+rownames(metadata)<-metadata$X
+metadata$Region_Site<-paste( metadata$Region, metadata$Site, sep = "")
+metadata$Treatment_Site<-paste( metadata$Treatment, metadata$Site, sep = "")
+```
+
+Convert files to correct format for phyloseq object and then rename samples in OTU table to match the format of the metadata file. Create phyloseq object and root phylogenetic tree for usage with distance metrics (e.g., Unifrac).
+
+```{r}
+#assign object type to merge into phyloseq object
+md<-sample_data(md)
+sample_names(md)<-md$SampleID
+otu<-otu_table(seqtab, taxa_are_rows = F)
+tax_tab<-tax_table(taxa)
+sample_names(md)
+sample_names(otu)
+#check sample names of both otu table and metadata
+#remove .fastq.gz from otu table names
+sample_names(otu)<-str_split(sample_names(otu), pattern = "_", simplify = T) [,1]
+#since they match, you can create the phyloseq object
+mouse16S_orig<-phyloseq(md, otu, tax_tab, fitGTR$tree)
+
+#root tree for distance metrics like unifrac
+set.seed(11)
+phy_tree(mouse16S_orig)<-root(phy_tree(mouse16S_orig), sample(taxa_names(mouse16S_orig), 1), resolve.root = TRUE)
+is.rooted(phy_tree(mouse16S_orig))
+```
+
+
+```{r}
+#Extract original IDs for future reference. 
+#seq_df_w_OTUID<-data.frame(OTUID = 1:ntaxa(mouse16S_orig), Sequence = taxa_names(mouse16S_orig))
+#taxa_names(mouse16S_orig)<-paste("OTU_" , 1:ntaxa(mouse16S_orig), sep = "")
+
+
+#remove chloroplast
+#6 chloroplast or mitochondrial taxa
+mouse16S_orig_nc<-subset_taxa(mouse16S_orig, Family!= "Mitochondria" | is.na(Family) & Order!="Chloroplast" | is.na(Order))
+
+
+# 282 bacterial taxa -1 non bacterial
+mouse16S_bac<-subset_taxa(mouse16S_orig_nc, Kingdom == "Bacteria")
+
+```
+
+Examine rarefaction curves. Plateau in most samples under the 1.5k read mark.
+
+```{r}
+rarecurve(otu_table(mouse16S_bac), step=50, cex=0.5, main = "Rarefaction Curve", ylab="Richness", xlab="Read Depth")
+```
+
+```{r}
+
+sort(sample_sums(mouse16S_bac))
+summary(sample_sums(mouse16S_bac))
+sd(sample_sums(mouse16S_bac))
+mouse16S_bac_rarefy<-rarefy_even_depth(mouse16S_bac, sample.size = 1400, rngseed = 14, trimOTUs = T)
+```
+
+
 
 Change seq headers to asv number (ASV_1, ASV_2...)
 ```{r}
+seqtab<-data.frame(otu_table(mouse16S_bac_rarefy))
+
 asv_seqs <- colnames(seqtab)
 asv_headers <- vector(dim(seqtab)[2], mode="character")
 
@@ -19,21 +112,22 @@ for (i in 1:dim(seqtab)[2]) {
 Create and write out a fasta of our final ASV seqs
 ```{r}
 asv_fasta <- c(rbind(asv_headers, asv_seqs))
-write(asv_fasta, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/ASVs.fa")
+write(asv_fasta, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/ASVs_rarify.fa")
 
 #ASV count table:
 asv_tab <- t(seqtab)
 row.names(asv_tab) <- sub(">", "", asv_headers)
-write.table(asv_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_counts.tsv", sep="\t", quote=F, col.names=NA)
+write.table(asv_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_counts_rarify.tsv", sep="\t", quote=F, col.names=NA)
 
 #tax table
+taxa <- data.frame(tax_table(mouse16S_bac_rarefy))
 asv_tax <- taxa
 row.names(asv_tax) <- sub(">", "", asv_headers)
-write.table(asv_tax, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_taxonomy.tsv", sep = "\t", quote=F, col.names=NA)
+write.table(asv_tax, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/ASVs_taxonomy_rarify.tsv", sep = "\t", quote=F, col.names=NA)
 
 #To merge asv abundance and taxonomy into one file
 OTU_TAX_table <- merge(asv_tab, asv_tax, by=0)
-write.table(OTU_TAX_table, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/OTU_TAX_table.tsv", sep = "\t", quote=F, col.names=NA)
+write.table(OTU_TAX_table, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/OTU_TAX_table_rarify.tsv", sep = "\t", quote=F, col.names=NA)
 
 ```
 
