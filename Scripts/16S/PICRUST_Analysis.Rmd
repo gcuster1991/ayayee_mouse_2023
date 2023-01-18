@@ -1,0 +1,213 @@
+---
+title: "PICRUST analysis "
+output: html_notebook
+---
+
+```{r}
+require(DESeq2)
+```
+
+```{#r}
+ko<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/KO_metagenome_out/pred_metagenome_unstrat_descrip.tsv", header = T, sep = "\t")
+ec<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/EC_metagenome_out/pred_metagenome_unstrat_descrip.tsv", header = T, sep = "\t")
+pathways<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/path_abun_unstrat_descrip.tsv", header = T, sep = "\t")
+```
+
+KO
+```{r}
+ko<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/KO_metagenome_out/pred_metagenome_unstrat_descrip.tsv", header = T, sep = "\t")
+
+rownames(ko) <- ko$function.
+ko$function. = NULL
+ko$description = NULL
+ko_t <- data.frame(t(ko))
+ko_t$group <- substr(rownames(ko_t), start = 1, stop = 2)
+kruskal.test(K00001 ~ group, data = ko_t)
+
+
+for(i in 1:length(names(ko_t))){
+  mod<-kruskal.test(unlist(ko_t[i]) ~ ko_t$group)
+  if(mod$p.value < 0.001){
+  print(mod)
+  print(names(ko_t[i]))
+}
+}
+
+
+```
+
+
+```{#r}
+#DESEQ
+ko<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/KO_metagenome_out/pred_metagenome_unstrat_descrip.tsv", header = T, sep = "\t")
+
+rownames(ko) <- ko$function.
+ko2 <- ko
+ko$function. = NULL
+ko$description = NULL
+ko_t <- data.frame(t(ko))
+
+samp_data<-data.frame(t(data.frame(t(substr(rownames(ko_t), start = 1, stop = 2)))))
+rownames(samp_data) <- rownames(ko_t)
+names(samp_data) <- "groups"
+samp_data$groups <- as.factor(samp_data$groups)
+
+library(dplyr)
+ko_round <- ko %>% mutate_if(is.numeric, round)
+
+dds <- DESeqDataSetFromMatrix(countData = ko_round,
+                              colData = samp_data,
+                              design = ~ groups)
+dds
+dds$groups <- relevel(dds$groups, ref = "CV")
+dds <- DESeq(dds)
+res <- results(dds)
+alpha = 0.01
+res$Description <- ko2$description
+sig_tab<-res[which(res$padj < alpha), ]
+sig_tab
+plotMA(sig_tab)
+
+write.csv(sig_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/KO_metagenome_out/deseq2_ko_rarefied.csv")
+```
+
+pathways
+```{r}
+pathways<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/path_abun_unstrat_descrip.tsv", header = T, sep = "\t")
+pathways2<-pathways
+
+rownames(pathways) <- pathways$pathway
+pathways$pathway = NULL
+pathways$description = NULL
+pathways_t <- data.frame(t(pathways))
+pathways_t$group <- substr(rownames(pathways_t), start = 1, stop = 2)
+
+j = 0 
+paths<-list()
+for(i in 1:length(names(pathways_t))){
+  mod<-kruskal.test(unlist(pathways_t[i]) ~ pathways_t$group)
+  if(mod$p.value < 0.01){
+    #for count of significantly different pathways
+     print(names(pathways_t[i]))        
+            j<-j+1
+            print(paste("significant pathway no.", j, sep = " "))
+      print(mod)
+  paths <-c(paths,names(pathways_t[i]))
+  }
+}
+
+paths_df<-data.frame(unlist(paths))
+names(paths_df) <- "pathway"
+paths_df$pathway<-str_replace(paths_df$pathway, "[[.]]", "-")
+str(paths_df)
+str(pathways2$pathway)
+paths_with_descp<-pathways2[pathways2$pathway %in% paths_df$pathway,]
+write.csv(paths_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_pathways_p_0.01.csv")
+
+```
+
+Pathways
+```{r}
+rownames(pathways) <- pathways$pathway
+pathways$pathway = NULL
+pathways$description = NULL
+pathways_t <- data.frame(t(pathways))
+pathways_t$group <- substr(rownames(pathways_t), start = 1, stop = 2)
+#kruskal.test(K00001 ~ group, data = pathways_t)
+
+
+for(i in 1:length(names(pathways_t))){
+  mod<-kruskal.test(unlist(pathways_t[i]) ~ pathways_t$group)
+  if(mod$p.value <- 0.001){
+  print(mod)
+  print(names(pathways_t[i]))
+}
+}
+
+```
+
+
+```{#r}
+#DESEQ
+
+pathways<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/path_abun_unstrat_descrip.tsv", header = T, sep = "\t")
+
+
+rownames(pathways) <- pathways$pathway
+pathways2 <- pathways
+pathways$pathway = NULL
+pathways$description = NULL
+pathways_t <- data.frame(t(pathways))
+
+samp_data<-data.frame(t(data.frame(t(substr(rownames(pathways_t), start = 1, stop = 2)))))
+rownames(samp_data) <- rownames(pathways_t)
+names(samp_data) <- "groups"
+samp_data$groups <- as.factor(samp_data$groups)
+
+library(dplyr)
+pathways_round <- pathways %>% mutate_if(is.numeric, round)
+
+dds <- DESeqDataSetFromMatrix(countData = pathways_round,
+                              colData = samp_data,
+                              design = ~ groups)
+dds
+dds$groups <- relevel(dds$groups, ref = "CV")
+dds <- DESeq(dds)
+res <- results(dds)
+alpha = 0.01
+res$Description <- pathways2$description
+sig_tab<-res[which(res$padj < alpha), ]
+sig_tab
+plotMA(sig_tab)
+
+write.csv(sig_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/deseq2_pathways_rarefied.csv")
+
+
+plot(pathways_t$ANAEROFRUCAT.PWY ~ factor(substr(rownames(pathways_t), start = 1, stop = 2) ))
+plot(pathways_t$ARG.POLYAMINE.SYN ~ factor(substr(rownames(pathways_t), start = 1, stop = 2) ))
+plot(ec_t$EC.1.1.1.133 ~ factor(substr(rownames(ec_t), start = 1, stop = 2) ))
+```
+EC
+```{r}
+
+```
+
+
+```{#r}
+ec<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/EC_metagenome_out/pred_metagenome_unstrat_descrip.tsv", header = T, sep = "\t")
+
+rownames(ec) <- ec$function.
+ec2<-ec
+ec$function. = NULL
+ec$description = NULL
+ec_t <- data.frame(t(ec))
+
+samp_data<-data.frame(t(data.frame(t(substr(rownames(ec_t), start = 1, stop = 2)))))
+rownames(samp_data) <- rownames(ec_t)
+names(samp_data) <- "groups"
+samp_data$groups <- as.factor(samp_data$groups)
+
+library(dplyr)
+ec_round <- ec %>% mutate_if(is.numeric, round)
+
+dds <- DESeqDataSetFromMatrix(countData = ec_round,
+                              colData = samp_data,
+                              design = ~ groups)
+dds
+dds$groups <- relevel(dds$groups, ref = "CV")
+dds <- DESeq(dds)
+res <- results(dds)
+alpha = 0.01
+res$Description <- ec2$description
+sig_tab<-res[which(res$padj < alpha), ]
+sig_tab
+plotMA(sig_tab)
+
+write.csv(sig_tab, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/EC_metagenome_out/deseq2_ec_rarefied.csv")
+
+plot(ec_t$EC.1.1.1.1 ~ factor(substr(rownames(ec_t), start = 1, stop = 2) ))
+plot(ec_t$EC.1.1.1.103 ~ factor(substr(rownames(ec_t), start = 1, stop = 2) ))
+plot(ec_t$EC.1.1.1.133 ~ factor(substr(rownames(ec_t), start = 1, stop = 2) ))
+```
+
+
