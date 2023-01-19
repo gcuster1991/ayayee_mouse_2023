@@ -3,6 +3,10 @@ title: "PICRUST analysis "
 output: html_notebook
 ---
 
+https://academic.oup.com/bioinformatics/article/30/21/3123/2422240
+
+
+
 ```{r}
 require(DESeq2)
 ```
@@ -16,6 +20,7 @@ pathways<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/D
 KO
 ```{r}
 ko<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/KO_metagenome_out/pred_metagenome_unstrat_descrip.tsv", header = T, sep = "\t")
+ko2 <- ko
 
 rownames(ko) <- ko$function.
 ko$function. = NULL
@@ -25,13 +30,31 @@ ko_t$group <- substr(rownames(ko_t), start = 1, stop = 2)
 kruskal.test(K00001 ~ group, data = ko_t)
 
 
+
+
+j = 0 
+kos<-list()
 for(i in 1:length(names(ko_t))){
   mod<-kruskal.test(unlist(ko_t[i]) ~ ko_t$group)
-  if(mod$p.value < 0.001){
-  print(mod)
-  print(names(ko_t[i]))
+  if(mod$p.value < 0.005){
+    #for count of significantly different pathways
+     print(names(ko_t[i]))        
+            j<-j+1
+            print(paste("significant ko no.", j, sep = " "))
+      print(mod)
+  kos <-c(kos,names(ko_t[i]))
+  }
 }
-}
+
+kos_df<-data.frame(unlist(kos))
+names(kos_df) <- "ko"
+#kos_df$pathway<-str_replace(kos_df$ko, "[[.]]", "-")
+str(kos_df)
+str(ko2$function.)
+ko_with_descp<-ko2[ko2$function. %in% kos_df$ko,]
+
+
+write.csv(ko_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_ko_p_0.005.csv")
 
 
 ```
@@ -103,26 +126,26 @@ str(paths_df)
 str(pathways2$pathway)
 paths_with_descp<-pathways2[pathways2$pathway %in% paths_df$pathway,]
 write.csv(paths_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_pathways_p_0.01.csv")
-
+#added a few lines in excel. then read back in
 ```
 
-Pathways
-```{r}
-rownames(pathways) <- pathways$pathway
-pathways$pathway = NULL
-pathways$description = NULL
-pathways_t <- data.frame(t(pathways))
-pathways_t$group <- substr(rownames(pathways_t), start = 1, stop = 2)
-#kruskal.test(K00001 ~ group, data = pathways_t)
+path  graphing.
+```{#r}
+paths_excel<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_pathways_p_0.01_excel.csv")
+rownames(paths_excel)<-paths_excel$Path_Descrip
+paths_excel$Path_Descrip = NULL
+paths_excel_t <- data.frame(t(paths_excel))
+paths_excel_t$group <- substr(rownames(paths_excel_t), start = 1, stop = 2)
 
 
-for(i in 1:length(names(pathways_t))){
-  mod<-kruskal.test(unlist(pathways_t[i]) ~ pathways_t$group)
-  if(mod$p.value <- 0.001){
-  print(mod)
-  print(names(pathways_t[i]))
-}
-}
+
+path_long <- melt(paths_excel_t, id.vars = c("group"), variable.name = "Pathway")
+
+
+ggplot(path_long, aes(x=Pathway, y=value, fill=group)) + 
+    geom_boxplot() +
+    facet_wrap(~Pathway, scale="free")
+
 
 ```
 
@@ -169,7 +192,39 @@ plot(ec_t$EC.1.1.1.133 ~ factor(substr(rownames(ec_t), start = 1, stop = 2) ))
 ```
 EC
 ```{r}
+ec<-read.csv("/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/EC_metagenome_out/pred_metagenome_unstrat_descrip.tsv", header = T, sep = "\t")
+ec2 <- ec
 
+rownames(ec) <- ec$function.
+ec$function. = NULL
+ec$description = NULL
+ec_t <- data.frame(t(ec))
+ec_t$group <- substr(rownames(ec_t), start = 1, stop = 2)
+
+
+j = 0 
+ecs<-list()
+for(i in 1:length(names(ec_t))){
+  mod<-kruskal.test(unlist(ec_t[i]) ~ ec_t$group)
+  if(mod$p.value < 0.005){
+    #for count of significantly different pathways
+     print(names(ec_t[i]))        
+            j<-j+1
+            print(paste("significant ec no.", j, sep = " "))
+      print(mod)
+  ecs <-c(ecs,names(ec_t[i]))
+  }
+}
+
+ecs_df<-data.frame(unlist(ecs))
+names(ecs_df) <- "ec"
+ec2$function.<-str_replace(ec2$function., ":", ".")
+str(ecs_df)
+str(ec2$function.)
+ec_with_descp<-ec2[ec2$function. %in% ecs_df$ec,]
+
+
+write.csv(ec_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/EC_metagenome_out/kruskallwallis_rarefied_ec_p_0.005.csv")
 ```
 
 

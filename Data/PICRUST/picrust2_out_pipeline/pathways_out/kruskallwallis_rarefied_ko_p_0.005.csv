@@ -1,0 +1,260 @@
+"","function.","description","CV1","CV2","CV3","CV4","CV5","GF1","GF2","GF3","GF4","GF5","GF6"
+"54","K00082","ribD2; 5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:1.1.1.193]",6,19,3,15,3,0,1,0,0,0,0
+"116","K00183","K00183; prokaryotic molybdopterin-containing oxidoreductase family, molybdopterin binding subunit",8,12,20,6,10,0,0,0,0,0,0
+"119","K00194","cdhD, acsD; acetyl-CoA decarbonylase/synthase complex subunit delta [EC:2.1.1.245]",9,9,16,2,10,0,0,0,0,0,0
+"120","K00196","cooF; anaerobic carbon-monoxide dehydrogenase iron sulfur subunit",23,39,29,12,16,0,0,0,0,0,0
+"121","K00197","cdhE, acsC; acetyl-CoA decarbonylase/synthase complex subunit gamma [EC:2.1.1.245]",11,10,19,3,11.5,0,0,0,0,0,0
+"122","K00198","cooS, acsA; anaerobic carbon-monoxide dehydrogenase catalytic subunit [EC:1.2.7.4]",29,26,39,7,23,0,0,0,0,0,0
+"140","K00245","frdB; fumarate reductase iron-sulfur subunit [EC:1.3.5.4]",3,6,7,2.5,3.17,0,0,0,0,0,0
+"141","K00246","frdC; fumarate reductase subunit C",1,3,2,1,0.67,0,0,0,0,0,0
+"206","K00354","E1.6.99.1; NADPH2 dehydrogenase [EC:1.6.99.1]",44,12,17,35,5,0,0,0,0,0,2
+"284","K00547","mmuM, BHMT2; homocysteine S-methyltransferase [EC:2.1.1.10]",75,45,29.5,59,22,0,0,0,0,0,3
+"317","K00613","GATM; glycine amidinotransferase [EC:2.1.4.1]",4,6,10,3,5,0,0,0,0,0,0
+"320","K00619","argA; amino-acid N-acetyltransferase [EC:2.3.1.1]",18.5,22,18,8.5,4.5,0,0,0,0,0,1.5
+"367","K00712","tagE; poly(glycerol-phosphate) alpha-glucosyltransferase [EC:2.4.1.52]",32,7,12,33,4,0,0,0,0,0,0
+"420","K00824","dat; D-alanine transaminase [EC:2.6.1.21]",10,11,10,16,11,0,0,9,0,0,2
+"439","K00853","araB; L-ribulokinase [EC:2.7.1.16]",60,59,28,59,12.67,0,1,0,0,0,2
+"478","K00918","pfkC; ADP-dependent phosphofructokinase/glucokinase [EC:2.7.1.146 2.7.1.147]",3.5,70.5,4,8,4,0,0,0,0,0,0
+"515","K00968","PCYT1; choline-phosphate cytidylyltransferase [EC:2.7.7.15]",16.67,16.17,2,5.17,4.67,0,0,0,0,0,0
+"536","K00996","rfbP; undecaprenyl-phosphate galactose phosphotransferase [EC:2.7.8.6]",10,10,5,130,23,0,0,0,0,1,3
+"548","K01023","assT; arylsulfate sulfotransferase [EC:2.8.2.22]",15.17,15.67,2,5.17,4.67,0,0,0,0,0,0
+"549","K01026","pct; propionate CoA-transferase [EC:2.8.3.1]",23,9,26,20,21,0,1,0,0,0,0
+"554","K01034","atoD; acetate CoA/acetoacetate CoA-transferase alpha subunit [EC:2.8.3.8 2.8.3.9]",30,17,13,8,15,0,1,0,0,0,1
+"555","K01035","atoA; acetate CoA/acetoacetate CoA-transferase beta subunit [EC:2.8.3.8 2.8.3.9]",30,17,14,8,15,0,1,0,0,0,1
+"570","K01067","E3.1.2.1, ACH1; acetyl-CoA hydrolase [EC:3.1.2.1]",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"574","K01073","E3.1.2.20; acyl-CoA hydrolase [EC:3.1.2.20]",44,10,16,35,5,0,0,0,0,0,1
+"601","K01134","ARSA; arylsulfatase A [EC:3.1.6.8]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"620","K01174","nuc; micrococcal nuclease [EC:3.1.31.1]",9.25,7,3.75,128,23.25,0,0,0,0,1,1
+"646","K01212","sacC, levB; levanase [EC:3.2.1.65]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"650","K01220","E3.2.1.85, lacG; 6-phospho-beta-galactosidase [EC:3.2.1.85]",44,12,17,35,5,0,2,0,0,0,0
+"748","K01482","DDAH, ddaH; dimethylargininase [EC:3.5.3.18]",2,3,5,1.5,2.5,0,0,0,0,0,0
+"796","K01577","oxc; oxalyl-CoA decarboxylase [EC:4.1.1.8]",12,3,4,20,1.67,0,0,0,0,0,0
+"809","K01596","E4.1.1.32, pckA, PCK; phosphoenolpyruvate carboxykinase (GTP) [EC:4.1.1.32]",44,46,28,23,26,0,0,3.5,0,0,0
+"821","K01615","gcdA; glutaconyl-CoA decarboxylase [EC:4.1.1.70]",33,15,20,26,23,0,0,0,0,0,0
+"834","K01630","garL; 2-dehydro-3-deoxyglucarate aldolase [EC:4.1.2.20]",6,6,5,15,5.67,0,0,0,0,0,2
+"843","K01643","citF; citrate lyase subunit alpha / citrate CoA-transferase [EC:2.8.3.10]",12.25,9,16.75,22,10.25,0,1,0,0,0,0
+"845","K01646","citD; citrate lyase subunit gamma (acyl carrier protein)",10.25,9,14.75,21,9.25,0,1,0,0,0,0
+"904","K01730","ogl; oligogalacturonide lyase [EC:4.2.2.6]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"916","K01746","E4.3.1.4; formiminotetrahydrofolate cyclodeaminase [EC:4.3.1.4]",13,19,7,15,7,0,0,0,0,0,0
+"921","K01753","dsdA; D-serine dehydratase [EC:4.3.1.18]",9,15,6,2,1.67,0,0,0,0,0,1
+"968","K01819","E5.3.1.26, lacA, lacB; galactose-6-phosphate isomerase [EC:5.3.1.26]",88,20,32,70,10,0,4,0,0,0,0
+"985","K01848","E5.4.99.2A, mcmA1; methylmalonyl-CoA mutase, N-terminal domain [EC:5.4.99.2]",2,1,3,1,1.5,0,0,0,0,0,0
+"986","K01849","E5.4.99.2B, mcmA2; methylmalonyl-CoA mutase, C-terminal domain [EC:5.4.99.2]",2,1,4,1,1.5,0,0,0,0,0,0
+"1022","K01910","citC; [citrate (pro-3S)-lyase] ligase [EC:6.2.1.22]",10.25,9,14.75,21,9.25,0,1,0,0,0,0
+"1066","K01974","RTCA, rtcA; RNA 3'-terminal phosphate cyclase (ATP) [EC:6.5.1.4]",1,3,2,1,0.67,0,0,0,0,0,0
+"1150","K02076","zurR, zur; Fur family transcriptional regulator, zinc uptake regulator",44.25,12,17.75,38,5.25,0,0,0,0,0,1
+"1222","K02241","comFB; competence protein ComFB",24.5,32.5,162.5,13,21.5,0.5,0,0,0,0,0.5
+"1351","K02450","gspA; general secretion pathway protein A",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"1370","K02472","wecC; UDP-N-acetyl-D-mannosaminuronic acid dehydrogenase [EC:1.1.1.336]",45.51,47.01,6,17.51,14.68,0,0,0,0,0,3
+"1386","K02490","spo0F; two-component system, response regulator, stage 0 sporulation protein F",18.5,22,18,8.5,4.5,0,0,0,0,0,1.5
+"1417","K02530","lacR; DeoR family transcriptional regulator, lactose phosphotransferase system repressor",88.25,22,33.75,70,10.25,0,2,0,0,0,0
+"1418","K02531","lacT; transcriptional antiterminator",44,10,16,35,5,0,2,0,0,0,0
+"1439","K02567","napA; periplasmic nitrate reductase NapA [EC:1.7.99.-]",19.5,28,22,10,6.17,0,0,0,0,0,1.5
+"1440","K02568","napB; cytochrome c-type protein NapB",2,4,5,1.5,3.17,0,0,0,0,0,1
+"1442","K02570","napD; periplasmic nitrate reductase NapD",2,4,5,1.5,3.17,0,0,0,0,0,1
+"1445","K02573","napG; ferredoxin-type protein NapG",27.5,39,42,16,16.17,0,0,0,0,0,0.5
+"1446","K02574","napH; ferredoxin-type protein NapH",27.5,39,42,16,16.17,0,0,0,0,0,0.5
+"1453","K02589","nifHD1, nifI1; nitrogen regulatory protein PII 1",2,3,3,1,1.5,0,0,0,0,0,0
+"1454","K02590","nifHD2, nifI2; nitrogen regulatory protein PII 2",2,3,3,1,1.5,0,0,0,0,0,0
+"1479","K02626","pdaD; arginine decarboxylase [EC:4.1.1.19]",15.17,15.67,2,5.17,4.67,0,0,0,0,0,0
+"1514","K02744","PTS-Aga-EIIA, agaF; PTS system, N-acetylgalactosamine-specific IIA component [EC:2.7.1.-]",22.25,48,24.75,175,40.25,2,2,0,2,2,2
+"1534","K02781","PTS-Gut-EIIA, srlB; PTS system, glucitol/sorbitol-specific IIA component [EC:2.7.1.198]",44.5,14,19.5,35,6.17,0,1,0,0,0,0
+"1537","K02786","PTS-Lac-EIIA, lacF; PTS system, lactose-specific IIA component [EC:2.7.1.207]",44,12,17,35,5,0,2,0,0,0,0
+"1569","K02840","waaB, rfaB; UDP-D-galactose:(glucosyl)LPS alpha-1,6-D-galactosyltransferase [EC:2.4.1.-]",44,10,16,35,5,0,0,0,0,0,1
+"1576","K02849","waaQ, rfaQ; heptosyltransferase III [EC:2.4.-.-]",16.5,21,15,8.5,3.67,0,0,0,0,0,2.5
+"1584","K02858","ribB, RIB3; 3,4-dihydroxy 2-butanone 4-phosphate synthase [EC:4.1.99.12]",16.17,19.67,4,7.17,5.34,0,0,0,0,0,2
+"1585","K02859","ribT; riboflavin biosynthesis RibT protein",44,10,16,38,5,0,0,0,0,0,1
+"1678","K03146","THI4, THI1; cysteine-dependent adenosine diphosphate thiazole synthase [EC:2.4.2.60]",22.67,17.67,3.5,9.92,5.17,0,0,0,0,0,0.25
+"1680","K03148","thiF; sulfur carrier protein ThiS adenylyltransferase [EC:2.7.7.73]",16.5,23,15,7.5,4.17,0,0,0,0,0,0.5
+"1701","K03191","ureI; acid-activated urea channel",44,12,17,35,5,0,0,0,0,0,0
+"1758","K03298","TC.DME; drug/metabolite transporter, DME family",20.5,33,23,11.5,3,0,0,0,0,0,0.5
+"1771","K03312","gltS; glutamate:Na+ symporter, ESS family",29,45,23,71,28.67,0,0,19.5,0,0,0
+"1783","K03326","TC.DCUC, dcuC, dcuD; C4-dicarboxylate transporter, DcuC family",19.75,32,24.25,15.75,2.42,0,0,0,0,0,0.25
+"1813","K03409","cheX; chemotaxis protein CheX",33,47,30,15,6,0,0,0,0,0,1
+"1826","K03429","ugtP; processive 1,2-diacylglycerol beta-glucosyltransferase [EC:2.4.1.315]",16,15,19,14.5,12,0,0,0,0,0,1
+"1835","K03444","MFS.SP; MFS transporter, SP family, sugar porter, other",23.67,20.17,3.5,9.92,5.67,0,0,0,0,0,0.25
+"1857","K03476","ulaG; L-ascorbate 6-phosphate lactonase [EC:3.1.1.-]",14.25,3,8.75,9,3.92,0,1,0,0,0,0
+"1869","K03489","yydK; GntR family transcriptional regulator, transcriptional regulator of bglA",88,22,33,71,10,0,0,0,0,0,0
+"1900","K03533","torD; TorA specific chaperone",2,3,5,1.5,3.17,0,0,0,0,0,0
+"2144","K03817","rimL; ribosomal-protein-serine acetyltransferase [EC:2.3.1.-]",6,19,3,15,3.67,0,1,0,0,0,1
+"2193","K03931","ygjK; putative isomerase",14.75,9,4.25,5.75,1.42,0,0,0,0,0,0.25
+"2196","K03941","NDUFS8; NADH dehydrogenase (ubiquinone) Fe-S protein 8 [EC:1.6.5.3 1.6.99.3]",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"2200","K03972","pspE; phage shock protein E",1,3,2,1,0.67,0,0,0,0,0,0
+"2218","K04027","eutM; ethanolamine utilization protein EutM",10.25,30,9.75,8,4.25,0,0,0,0,0,0
+"2265","K04086","clpL; ATP-dependent Clp protease ATP-binding subunit ClpL",44,10,16,38,5,0,1,0,0,0,0
+"2349","K05299","fdhA; formate dehydrogenase (NADP+) alpha subunit [EC:1.17.1.10]",2,1,3,1,1.5,0,0,0,0,0,0
+"2351","K05304","NANS, SAS; sialic acid synthase [EC:2.5.1.56 2.5.1.57 2.5.1.132]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"2353","K05311","cggR; central glycolytic genes regulator",44.25,14,18.75,35,5.25,0,0,0,0,0,1
+"2359","K05342","E2.4.1.64; alpha,alpha-trehalose phosphorylase [EC:2.4.1.64]",15,37,40,21,43,0,0,5,0,0,0
+"2422","K05658","ABCB1, CD243; ATP-binding cassette, subfamily B (MDR/TAP), member 1 [EC:3.6.3.44]",12,3,4,8,1,0,0,0,0,0,0
+"2447","K05796","hydN; electron transport protein HydN",2,3,5,1.5,3.17,0,0,0,0,0,0
+"2460","K05811","yfiM; putative lipoprotein",6,19,3,15,3.67,0,1,0,0,0,1
+"2495","K05910","npr; NADH peroxidase [EC:1.11.1.1]",44.25,10,16.75,35,5.25,0,0,0,0,0,0
+"2501","K05937","K05937; uncharacterized protein",44,12,17,35,5,0,0,0,0,0,0
+"2511","K05979","comB; 2-phosphosulfolactate phosphatase [EC:3.1.3.71]",17.17,16.67,5,7.17,6.17,0,0,0,0,0,1
+"2515","K05988","dexA; dextranase [EC:3.2.1.11]",8.5,4.5,1.5,4.75,1,0,0,0,0,0,0.25
+"2517","K05992","amyM; maltogenic alpha-amylase [EC:3.2.1.133]",88,20,32,70,10,0,0,0,0,0,0
+"2620","K06216","rbsU; putative ribose uptake protein",44.25,10,16.75,35,5.25,0,0,0,0,0,0
+"2630","K06284","abrB; transcriptional pleiotropic regulator of transition state genes",70,70,44.5,36,36,0,0,0,0,0,2
+"2631","K06285","mtrB; transcription attenuation protein (tryptophan RNA-binding attenuator protein)",2,5,4,1,1.5,0,0,0,0,0,0
+"2635","K06295","gerKA; spore germination protein KA",52,51,37,30,32.5,0,0,0,0,0,0
+"2636","K06296","gerKB; spore germination protein KB",8,14,18,8,5,0,0,0,0,0,0
+"2637","K06297","gerKC; spore germination protein KC",13,14,14,12,9.5,0,0,0,0,0,0
+"2688","K06384","spoIIM; stage II sporulation protein M",13,8,9.5,7,7,0,0,0,0,0,1
+"2750","K06608","iolR; DeoR family transcriptional regulator, myo-inositol catabolism operon repressor",2,4,6,3,1,0,0,0,0,0,0
+"2752","K06610","iolF; MFS transporter, SP family, inositol transporter",2,3,5,1.5,2.5,0,0,0,0,0,0
+"2753","K06714","rocR; arginine utilization regulatory protein",34,32,14,26,13,0,0,0,0,0,2
+"2781","K06896","mapP; maltose 6'-phosphate phosphatase [EC:3.1.3.90]",46.25,12,19.75,36,6.25,0,1,0,0,0,1
+"2806","K06928","NTPCR; nucleoside-triphosphatase [EC:3.6.1.15]",6,9,16,2,9,0,0,0,0,0,0
+"2828","K06962","K06962; uncharacterized protein",49.25,16,25.75,38.5,9.25,0,1,0,0,0,1
+"2834","K06971","K06971; uncharacterized protein",16,34,21,14,8,0,0,0,0,0,1
+"2849","K06990","MEMO1; MEMO1 family protein",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"2889","K07034","K07034; uncharacterized protein",16.5,21,15,7.5,3.67,0,0,0,0,0,3.5
+"2910","K07063","K07063; uncharacterized protein",8.5,4.5,1.5,4.75,1,0,0,0,0,0,0.25
+"2934","K07097","K07097; uncharacterized protein",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"2937","K07101","K07101; uncharacterized protein",8.5,5,3.5,5.75,0.5,0,0,0,0,0,0.25
+"2943","K07109","K07109; uncharacterized protein",7,19,4,19,4.67,0,1,0,0,0,3
+"2975","K07151","STT3; dolichyl-diphosphooligosaccharide---protein glycosyltransferase [EC:2.4.99.18]",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"3035","K07257","spsF; spore coat polysaccharide biosynthesis protein SpsF",24,23,16.5,12.25,3.5,0,0,0,0,0,0.75
+"3045","K07270","K07270; glycosyl transferase, family 25",15.17,16.67,2,5.17,5.34,0,0,0,0,0,0
+"3069","K07306","dmsA; anaerobic dimethyl sulfoxide reductase subunit A [EC:1.8.5.3]",25.5,39,36,15,11.17,0,0,0,0,0,0.5
+"3070","K07307","dmsB; anaerobic dimethyl sulfoxide reductase subunit B (DMSO reductase iron- sulfur subunit)",97.5,132,111,49.5,31.34,0,0,0,0,0,2.5
+"3071","K07308","dmsC; anaerobic dimethyl sulfoxide reductase subunit C (DMSO reductase anchor subunit)",12,18,30,9,15.67,0,0,0,0,0,0
+"3072","K07309","ynfE; Tat-targeted selenate reductase subunit YnfE [EC:1.97.1.9]",4,6,10,3,5.67,0,0,0,0,0,0
+"3073","K07310","ynfF; Tat-targeted selenate reductase subunit YnfF [EC:1.97.1.9]",2,3,5,1.5,3.17,0,0,0,0,0,0
+"3074","K07311","ynfG; Tat-targeted selenate reductase subunit YnfG",2,3,5,1.5,2.5,0,0,0,0,0,0
+"3075","K07312","ynfH; Tat-targeted selenate reductase subunit YnfH",2,3,5,1.5,3.17,0,0,0,0,0,0
+"3081","K07321","cooC; CO dehydrogenase maturation factor",21,22,37,6,21.5,0,0,0,0,0,0
+"3154","K07496","K07496; putative transposase",153.25,53,76.75,139,25.92,0,0,0,0,0,9
+"3156","K07498","K07498; putative transposase",89.25,20,35.75,70,11.25,0,0,0,0,0,10
+"3161","K07505","repA; regulatory protein RepA",44,10,16,35,5,0,0,0,0,0,0
+"3173","K07571","K07571; S1 RNA binding domain protein",104.25,69,56.75,73,37.25,0,0,0,0,0,1
+"3181","K07590","RP-L7A, rplGB; large subunit ribosomal protein L7A",35,10,15,15,21.5,0,0,0,0,0,1
+"3215","K07673","narX; two-component system, NarL family, nitrate/nitrite sensor histidine kinase NarX [EC:2.7.13.3]",1,3,2,1,0.67,0,0,0,0,0,0
+"3223","K07684","narL; two-component system, NarL family, nitrate/nitrite response regulator NarL",1,4,2,1,0.67,0,0,0,0,0,0
+"3243","K07709","zraS, hydH; two-component system, NtrC family, sensor histidine kinase HydH [EC:2.7.13.3]",16.5,21,15,7.5,3.67,0,0,0,0,0,0.5
+"3248","K07714","atoC; two-component system, NtrC family, response regulator AtoC",35.67,42.67,20,22.67,11.67,0,0,0,0,0,0.5
+"3251","K07717","ycbA, glnK; two-component system, sensor histidine kinase YcbA [EC:2.7.13.3]",4,6,3,10,4,0,0,0,0,0,1
+"3253","K07719","ycbB, glnL; two-component system, response regulator YcbB",13,19,8,14,5,0,0,0,0,0,1
+"3266","K07739","ELP3, KAT9; elongator complex protein 3 [EC:2.3.1.48]",2,3,5,1.5,2.5,0,0,0,0,0,0
+"3277","K07772","torR; two-component system, OmpR family, torCAD operon response regulator TorR",6,19,3,15,3.67,0,1,0,0,0,0
+"3293","K07792","dcuB; anaerobic C4-dicarboxylate transporter DcuB",34.67,45.67,23,15.67,8.34,0,0,0,0,0,0.5
+"3304","K07812","torZ; trimethylamine-N-oxide reductase (cytochrome c) [EC:1.7.2.3]",2,6,4,2,0.67,0,0,0,0,0,0
+"3321","K08097","comA; phosphosulfolactate synthase [EC:4.4.1.19]",2,1,3,1,1.5,0,0,0,0,0,0
+"3385","K08315","hycI; hydrogenase 3 maturation protease [EC:3.4.23.51]",2,3,5,1.5,3.17,0,0,0,0,0,0
+"3391","K08321","lsrF; 3-hydroxy-5-phosphonooxypentane-2,4-dione thiolase [EC:2.3.1.245]",37.67,49.67,16.5,22.92,12.84,0,0,0,0,0,1.25
+"3393","K08323","rspA, manD; mannonate dehydratase [EC:4.2.1.8]",2,2,3,2,2.34,0,0,0,0,0,1
+"3402","K08352","phsA, psrA; thiosulfate reductase / polysulfide reductase chain A [EC:1.8.5.5]",37,48,40,18,11,0,0,0,0,0,1
+"3407","K08358","ttrB; tetrathionate reductase subunit B",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"3429","K08681","pdxT, pdx2; 5'-phosphate synthase pdxT subunit [EC:4.3.3.6]",4,4,8,2.5,4,0,0,0,0,0,1
+"3433","K08722","yfbR; 5'-deoxynucleotidase [EC:3.1.3.89]",49,47,33,33,30.67,0,0,0,0,0,2
+"3478","K09003","K09003; uncharacterized protein",15.17,15.67,2,5.17,4.67,0,0,0,0,0,0
+"3505","K09133","K09133; uncharacterized protein",3,3,4,2,1,0,0,0,0,0,0
+"3509","K09138","K09138; uncharacterized protein",2,3,5,1.5,2.5,0,0,0,0,0,0
+"3510","K09141","K09141; uncharacterized protein",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"3522","K09163","K09163; uncharacterized protein",54,56,38,39,35,0,0,0,0,0,0
+"3547","K09680","coaW; type II pantothenate kinase [EC:2.7.1.33]",24.67,17.67,5.5,13.92,6.17,0,0,0,0,0,1.25
+"3556","K09694","nodJ; lipooligosaccharide transport system permease protein",12,3,4,8,1,0,0,0,0,0,0
+"3557","K09695","nodI; lipooligosaccharide transport system ATP-binding protein",12,3,4,8,1,0,0,0,0,0,0
+"3572","K09729","K09729; uncharacterized protein",2,1,3,1,1.5,0,0,0,0,0,0
+"3582","K09764","K09764; uncharacterized protein",24.5,28,21.5,9.5,10.5,0,0,0,0,0,1.5
+"3697","K09942","K09942; uncharacterized protein",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"3698","K09944","K09944; uncharacterized protein",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"3711","K09961","K09961; uncharacterized protein",1,3,2,1,1.34,0,0,0,0,0,0
+"3774","K10040","ABC.GLN1.P; putative glutamine transport system permease protein",4.5,10,13.5,9,5.5,0,2,0,0,0,2
+"3775","K10041","ABC.GLN1.A; putative glutamine transport system ATP-binding protein [EC:3.6.3.-]",2.25,5,6.75,4.5,2.75,0,1,0,0,0,1
+"3845","K10555","lsrB; AI-2 transport system substrate-binding protein",10,30,9,8,4,0,0,0,0,0,1
+"3846","K10556","lsrC; AI-2 transport system permease protein",12,31,11,9,5,0,0,0,0,0,2
+"3847","K10557","lsrD; AI-2 transport system permease protein",12,30,11,9,5,0,0,0,0,0,1
+"3848","K10558","lsrA, ego; AI-2 transport system ATP-binding protein",10,30,9,8,4,0,0,0,0,0,1
+"3862","K10708","frlB; fructoselysine 6-phosphate deglycase [EC:3.5.-.-]",4,6,3,10,4,0,0,0,0,0,0
+"3944","K11203","PTS-Fru2-EIIC; PTS system, fructose-specific IIC-like component",11,7,5,129,25.34,0,0,0,0,1,1
+"3950","K11216","lsrK; autoinducer-2 kinase [EC:2.7.1.189]",12,30,11,9,5,0,0,0,0,0,1
+"3954","K11261","fwdE, fmdE; formylmethanofuran dehydrogenase subunit E [EC:1.2.7.12]",2,1,3,1,1.5,0,0,0,0,0,0
+"3972","K11392","rsmF; 16S rRNA (cytosine1407-C5)-methyltransferase [EC:2.1.1.178]",16.5,21,15,8.5,3.67,0,0,0,0,0,2.5
+"3984","K11535","nupC; nucleoside transport protein",44,10,16,36,5.67,0,0,0,0,0,5
+"3993","K11614","yufL, malK; two-component system, CitB family, sensor histidine kinase MalK [EC:2.7.13.3]",19,5,4,6,5,0,0,0,0,0,1
+"4008","K11691","K11691, dctS; two-component system, CitB family, sensor histidine kinase DctS [EC:2.7.13.3]",19,5,4,6,5,0,0,0,0,0,1
+"4009","K11692","K11692, dctR; two-component system, CitB family, response regulator DctR",23,11,7,16,9,0,0,0,0,0,1
+"4043","K11783","mqnB; futalosine hydrolase [EC:3.2.2.26]",17.5,21,16,9.5,4,0,0,0,0,0,0.5
+"4088","K11934","ompX; outer membrane protein X",30.34,31.34,4,11.34,10.01,0,0,0,0,0,2
+"4120","K12136","hyfA; hydrogenase-4 component A [EC:1.-.-.-]",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4122","K12138","hyfC; hydrogenase-4 component C [EC:1.-.-.-]",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4127","K12143","hyfH; hydrogenase-4 component H",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4129","K12145","hyfJ; hydrogenase-4 component J [EC:1.-.-.-]",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4157","K12282","mshL; MSHA biogenesis protein MshL",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"4162","K12292","comA; ATP-binding cassette, subfamily C, bacterial, competence factor transporting protein [EC:3.4.22.-]",88,20,32,70,10,0,0,0,0,0,0
+"4185","K12507","fadK; acyl-CoA synthetase [EC:6.2.1.-]",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4218","K12700","rihC; non-specific riboncleoside hydrolase [EC:3.2.-.-]",44.25,10,16.75,38,5.92,0,1,0,0,0,0
+"4243","K12990","rfbF, rhlC; rhamnosyltransferase [EC:2.4.1.-]",15.17,15.67,2,5.17,6.01,0,0,0,0,0,0
+"4252","K13012","wbqP; O-antigen biosynthesis protein WbqP",10,9,5,131,23,0,0,0,0,1,1
+"4256","K13016","wbpB; UDP-N-acetyl-2-amino-2-deoxyglucuronate dehydrogenase [EC:1.1.1.335]",7,22,5,16,3,0,1,0,0,0,0
+"4257","K13017","wbpE, wlbC; UDP-2-acetamido-2-deoxy-ribo-hexuluronate aminotransferase [EC:2.6.1.98]",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"4259","K13019","wbpI, wlbD; UDP-GlcNAc3NAcA epimerase [EC:5.1.3.23]",23.67,23.17,13,16.17,10.67,0,0,0,0,0,0
+"4291","K13327","spnN, oleW; dTDP-3,4-didehydro-2,6-dideoxy-alpha-D-glucose 3-reductase [EC:1.1.1.384]",15.17,15.67,2,5.17,4.67,0,0,0,0,0,0
+"4362","K13678","cpoA; 1,2-diacylglycerol-3-alpha-glucose alpha-1,2-galactosyltransferase [EC:2.4.1.-]",44,10,16,38,5,0,0,0,0,0,0
+"4365","K13688","chvB, cgs, ndvB; cyclic beta-1,2-glucan synthetase [EC:2.4.1.-]",11,32,10,8,4,0,0,0,0,0,0
+"4381","K13771","nsrR; Rrf2 family transcriptional regulator, nitric oxide-sensitive transcriptional repressor",16.5,21,15,8.5,3.67,0,0,0,0,0,2.5
+"4421","K13927","citXG; holo-ACP synthase / triphosphoribosyl-dephospho-CoA synthase [EC:2.7.7.61 2.4.2.52]",10,7,13,21,9,0,0,0,0,0,0
+"4437","K13990","FTCD; glutamate formiminotransferase / formiminotetrahydrofolate cyclodeaminase [EC:2.1.2.5 4.3.1.4]",7,19,4,17,4,0,1,0,0,0,0
+"4455","K14086","echA; ech hydrogenase subunit A",2,3,5,1.5,2.5,0,0,0,0,0,0
+"4456","K14087","echB; ech hydrogenase subunit B",2,3,5,1.5,2.5,0,0,0,0,0,0
+"4457","K14088","echC; ech hydrogenase subunit C",2,3,5,1.5,2.5,0,0,0,0,0,0
+"4458","K14090","echE; ech hydrogenase subunit E",2,3,5,1.5,2.5,0,0,0,0,0,0
+"4460","K14138","acsB; acetyl-CoA synthase [EC:2.3.1.169]",9,9,16,2,10,0,0,0,0,0,0
+"4486","K14414","rtcR; transcriptional regulatory protein RtcR",1,3,2,1,0.67,0,0,0,0,0,0
+"4493","K14534","abfD; 4-hydroxybutyryl-CoA dehydratase / vinylacetyl-CoA-Delta-isomerase [EC:4.2.1.120 5.3.3.3]",29,4,16,14,18,0,0,0,0,0,0
+"4528","K15022","fdhB; formate dehydrogenase (NADP+) beta subunit [EC:1.17.1.10]",17.5,24,17,8.5,3,0,0,0,0,0,0.5
+"4529","K15023","acsE; 5-methyltetrahydrofolate corrinoid/iron sulfur protein methyltransferase [EC:2.1.1.258]",11,10,19,3,11.5,0,0,0,0,0,0
+"4560","K15524","mngB; mannosylglycerate hydrolase [EC:3.2.1.170]",18,48,20,173,38,2,0,0,2,2,2
+"4563","K15527","K15527; cysteate synthase [EC:2.5.1.76]",7,19,4,17,4,0,1,0,0,0,0
+"4626","K15830","hycE; formate hydrogenlyase subunit 5",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4628","K15832","hycG; formate hydrogenlyase subunit 7",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4630","K15834","hycH; formate hydrogenlyase maturation protein HycH",2,3,5,1.5,3.17,0,0,0,0,0,0
+"4640","K15913","pglD; UDP-N-acetylbacillosamine N-acetyltransferase [EC:2.3.1.203]",9,7,3,128,23,0,0,0,0,1,1
+"4642","K15921","xynD; arabinoxylan arabinofuranohydrolase [EC:3.2.1.55]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"4645","K15924","xynC; glucuronoarabinoxylan endo-1,4-beta-xylanase [EC:3.2.1.136]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"4680","K16149","K16149; 1,4-alpha-glucan branching enzyme [EC:2.4.1.18]",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"4682","K16153","K16153; glycogen phosphorylase/synthase [EC:2.4.1.1 2.4.1.11]",7,19,4,17,4,0,1,0,0,0,0
+"4689","K16203","dppA1; D-amino peptidase [EC:3.4.11.-]",4.25,6,5.75,11,4.25,0,0,0,0,0,1
+"4695","K16214","pezT; UDP-N-acetylglucosamine kinase [EC:2.7.1.176]",2,3,5,1.5,2.5,0,0,0,0,0,0
+"4698","K16235","mmuP; S-methylmethionine transporter",48,12,16,36,4,0,0,0,0,0,2
+"4708","K16323","yxjA, nupG; purine nucleoside transport protein",44,10,16,38,5,0,0,0,0,0,0
+"4711","K16328","psuK; pseudouridine kinase [EC:2.7.1.83]",92,26.5,179.5,78.5,26,0.5,0,0,0,0,0
+"4712","K16329","psuG; pseudouridylate synthase [EC:4.2.1.70]",4,5,9,7,2,0,0,0,0,0,0
+"4719","K16435","evaA, eryBVI, tylCVI, tylX3, staJ; dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose 2,3-dehydratase [EC:4.2.1.159]",15.17,15.67,2,5.17,4.67,0,0,0,0,0,0
+"4772","K16849","uxaA1; altronate dehydratase small subunit [EC:4.2.1.7]",19,33,19,16,8,0,0,0,0,0,0
+"4773","K16850","uxaA2; altronate dehydratase large subunit [EC:4.2.1.7]",17,33,17,15,7,0,0,0,0,0,0
+"4781","K16881","K16881; mannose-1-phosphate guanylyltransferase / phosphomannomutase [EC:2.7.7.13 5.4.2.8]",29.5,53,29,16.5,8.5,0,0,0,0,0,1.5
+"4792","K16925","ykoE; energy-coupling factor transport system substrate-specific component",44.25,12,17.75,38,5.25,0,0,3.5,0,0,0
+"4793","K16926","htsT; energy-coupling factor transport system substrate-specific component",58.25,69,34.75,64,28.75,0,0,0,0,0,0
+"4796","K16937","doxD; thiosulfate dehydrogenase [quinone] large subunit [EC:1.8.5.2]",46.51,49.51,6,15.51,14.51,0,0,0,0,0,1
+"4800","K16961","yxeM; putative amino-acid transport system substrate-binding protein",3.5,70.5,4,8,4,0,0,0,0,0,0
+"4801","K16962","yxeN; putative amino-acid transport system permease protein",3.5,70.5,4,8,4,0,0,0,0,0,0
+"4835","K17243","aguG; alpha-1,4-digalacturonate transport system permease protein",2,4,3,1,1,0,0,0,0,0,0
+"4848","K17363","urdA; urocanate reductase [EC:1.3.99.33]",12,33,25,11.5,2.5,0,0,0,0,0,0
+"4856","K17489","E2.1.3.1-12S; methylmalonyl-CoA carboxyltransferase 12S subunit [EC:2.1.3.1]",16.5,21,15,7.5,3,0,0,0,0,0,0.5
+"4861","K17680","PEO1; twinkle protein [EC:3.6.4.12]",16,6.5,3,9.5,1.5,0,0,0,0,0,0.5
+"4887","K17992","hndB; NADP-reducing hydrogenase subunit HndB [EC:1.12.1.3]",65.17,110.67,47,199.17,55.67,2,0,0,2,2,2
+"4891","K18013","kce; 3-keto-5-aminohexanoate cleavage enzyme [EC:2.3.1.247]",9,19,11,1,1,0,0,0,0,0,0
+"4923","K18210","tfrB; fumarate reductase (CoM/CoB) subunit B [EC:1.3.4.1]",2,3,5,1.5,2.5,0,0,0,0,0,0
+"4956","K18345","vanSB, vanS, vanSD; two-component system, OmpR family, sensor histidine kinase VanS [EC:2.7.13.3]",33,32,23,41,42,0,0,0,0,0,0
+"4983","K18575","TMEM86B; alkenylglycerophosphocholine hydrolase [EC:3.3.2.2]",6,19,3,15,3,0,1,0,0,0,0
+"5012","K18830","pezA; HTH-type transcriptional regulator / antitoxin PezA",2,3,5,1.5,2.5,0,0,0,0,0,0
+"5053","K18926","lmrB; MFS transporter, DHA2 family, lincomycin resistance protein",60,19,30,52,11,0,0,0,0,0,0
+"5057","K18934","lmrS; MFS transporter, DHA2 family, multidrug resistance protein",44,10,16,35,5,0,0,0,0,0,0
+"5058","K18940","arlS; two-component system, OmpR family, sensor histidine kinase ArlS [EC:2.7.13.3]",9,7,3,128,23,0,0,0,0,1,1
+"5066","K18983","gci; D-galactarolactone cycloisomerase [EC:5.5.1.27]",4,1,4,2,2,0,0,0,0,0,0
+"5079","K19049","cslA; chondroitin AC lyase [EC:4.2.2.5]",53.67,28.17,9.5,28.92,7.67,0,0,0,0,0,1.25
+"5081","K19051","hepB; heparin/heparan-sulfate lyase [EC:4.2.2.7 4.2.2.8]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"5092","K19114","csh1; CRISPR-associated protein Csh1",9,7,3,128,23,0,0,0,0,1,1
+"5093","K19115","csh2; CRISPR-associated protein Csh2",9,7,3,128,23,0,0,0,0,1,1
+"5094","K19116","cas5h; CRISPR-associated protein Cas5h",9,7,3,128,23,0,0,0,0,1,1
+"5101","K19126","casE, cse3; CRISPR system Cascade subunit CasE",1,3,2,1,0.67,0,0,0,0,0,0
+"5115","K19200","IAL; isopenicillin-N N-acyltransferase like protein",5,9,8,4,1,0,0,0,0,0,0
+"5163","K19355","MAN; mannan endo-1,4-beta-mannosidase [EC:3.2.1.78]",7.5,2,1.5,4.75,0.5,0,0,0,0,0,0.25
+"5168","K19422","epsD; glycosyltransferase EpsD [EC:2.4.-.-]",7,7,11,11,6,0,0,0,0,0,1
+"5171","K19427","epsJ; glycosyltransferase EpsJ [EC:2.4.-.-]",15.17,15.67,2,5.17,4.67,0,0,0,0,0,0
+"5179","K19507","PTS-Gfr-EIIB, gfrB; PTS system, fructoselysine/glucoselysine-specific IIB component [EC:2.7.1.-]",20.25,46,21.75,174,39.25,2,0,0,2,2,2
+"5180","K19508","PTS-Gfr-EIIC, gfrC; PTS system, fructoselysine/glucoselysine-specific IIC component",20.25,46,21.75,174,39.25,2,0,0,2,2,2
+"5181","K19509","PTS-Gfr-EIID, gfrD; PTS system, fructoselysine/glucoselysine-specific IID component",20.25,46,21.75,174,39.25,2,0,0,2,2,2
