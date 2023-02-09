@@ -54,7 +54,7 @@ str(ko2$function.)
 ko_with_descp<-ko2[ko2$function. %in% kos_df$ko,]
 
 
-write.csv(ko_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_ko_p_0.005.csv")
+#write.csv(ko_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_ko_p_0.005.csv")
 
 
 ```
@@ -125,7 +125,7 @@ paths_df$pathway<-str_replace(paths_df$pathway, "[[.]]", "-")
 str(paths_df)
 str(pathways2$pathway)
 paths_with_descp<-pathways2[pathways2$pathway %in% paths_df$pathway,]
-write.csv(paths_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_pathways_p_0.01.csv")
+#write.csv(paths_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/pathways_out/kruskallwallis_rarefied_pathways_p_0.01.csv")
 #added a few lines in excel. then read back in
 ```
 
@@ -224,7 +224,7 @@ str(ec2$function.)
 ec_with_descp<-ec2[ec2$function. %in% ecs_df$ec,]
 
 
-write.csv(ec_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/EC_metagenome_out/kruskallwallis_rarefied_ec_p_0.005.csv")
+#write.csv(ec_with_descp, "/Users/gordoncuster/Desktop/Git_Projects/ayayee_mouse_2023/Data/PICRUST/picrust2_out_pipeline/EC_metagenome_out/kruskallwallis_rarefied_ec_p_0.005.csv")
 ```
 
 
